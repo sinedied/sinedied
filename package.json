@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/sinedied/sinedied.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "bin": {
     "card": "bin/card.js"
