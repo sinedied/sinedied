@@ -1,0 +1,55 @@
+{
+  "name": "@sinedied/card",
+  "version": "0.0.0",
+  "description": "Yohan Lasorsa's personal card",
+  "main": "index.js",
+  "bin": {
+    "card": "bin/card.js"
+  },
+  "scripts": {
+    "start": "node bin/card.js",
+    "build": "node build-card.js",
+    "lint": "xo",
+    "lint:fix": "xo --fix",
+    "release": "semantic-release",
+    "release:check": "semantic-release --dry-run"
+  },
+  "keywords": [
+    "personal",
+    "card"
+  ],
+  "author": {
+    "name": "Yohan Lasorsa",
+    "url": "https://twitter.com/sinedied"
+  },
+  "homepage": "https://github.com/sinedied/sinedied",
+  "bugs": {
+    "url": "https://github.com/sinedied/sinedied/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@semantic-release/git": "^9.0.0",
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.0",
+    "semantic-release": "^17.1.1",
+    "xo": "^0.32.1"
+  },
+  "xo": {
+    "prettier": true,
+    "space": true
+  },
+  "prettier": {
+    "bracketSpacing": true
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "branch": "master"
+  },
+  "files": [
+    "bin"
+  ]
+}
